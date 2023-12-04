@@ -28,7 +28,7 @@ def get_power(game_info):
     countings = {'red': 0, 'green': 0, 'blue': 0}
 
     for bag in bags:
-        draws = round.split(', ')
+        draws = bag.split(', ')
         
         for draw in draws:
             draw_info = draw.split(' ')
@@ -65,3 +65,6 @@ for game in games:
 
 assert(solution == 2447)
 assert(solution_two == 56322)
+
+print(solution)
+print(solution_two)
